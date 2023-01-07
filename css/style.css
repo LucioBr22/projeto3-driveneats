@@ -19,10 +19,10 @@ body{
     z-index: 1;
 }
 .righteous{
-    font-family: Righteous;
+    font-family: 'Righteous';
 }
 .roboto{
-    font-family: Roboto;
+    font-family: 'Roboto';
 }
 .titulo-superior{
     font-style: normal;
@@ -141,7 +141,7 @@ body{
 .texto-botao{
     width: 182px;
     height: 36.6px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
