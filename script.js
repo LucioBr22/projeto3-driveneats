@@ -22,8 +22,6 @@ function selecionandoPrato(Prato){
 
     nomePrato = nomeDoPrato.innerHTML;
 
-    console.log(valorPrato);
-
     continuar();
 
 }
@@ -48,11 +46,9 @@ function selecionandoBebida(Bebida){
     valorBebida = valorBebida.replace(',','.');
     valorBebida = parseFloat(valorBebida);
 
-    const nomeDaBebida = Bebida.querySelector('.nome-alimento')
+    const nomeDaBebida = Bebida.querySelector('.nome-alimento');
 
     nomeBebida = nomeDaBebida.innerHTML;
-
-    console.log(valorBebida);
 
     continuar();
 
@@ -81,8 +77,6 @@ function selecionandoSobremesa(Sobremesa){
     const nomeDaSobremesa = Sobremesa.querySelector('.nome-alimento');
 
     nomeSobremesa = nomeDaSobremesa.innerHTML;
-    
-    console.log(valorSobremesa);
 
     continuar();
 
@@ -101,7 +95,7 @@ function fecharPedido(){
     let somaTotal = valorPrato+valorBebida+valorSobremesa;
     somaTotal = somaTotal.toFixed(2);
     somaTotal = somaTotal.replace('.',',');
-    let texto = `Olá, gostaria de fazer o pedido: \n- Prato: ${nomePrato}\n- Bebida: ${nomeBebida}\n- Sobremesa: ${nomeSobremesa}\nTotal: R$ ${somaTotal}`
+    const texto = `Olá, gostaria de fazer o pedido: \n- Prato: ${nomePrato}\n- Bebida: ${nomeBebida}\n- Sobremesa: ${nomeSobremesa}\nTotal: R$ ${somaTotal}`
     const textoCompleto = encodeURIComponent(texto);
-    window.open(`https://wa.me/+5592992111962?text=${textoCompleto}`);
+    window.open(`https://wa.me/+5592999999999?text=${textoCompleto}`);
 }
