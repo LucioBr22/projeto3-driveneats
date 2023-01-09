@@ -17,6 +17,7 @@ body{
     top: 0px;
     position: fixed;
     z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
 .righteous{
     font-family: 'Righteous';
@@ -115,8 +116,12 @@ body{
     font-weight: 400;
     font-style: normal;
     line-height: 19px;
+    margin-right: 10px;
     color: #000000;
     margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .barra-inferior{
     width: 100vw;
@@ -146,6 +151,22 @@ body{
     font-weight: 400;
     font-size: 17px;
     letter-spacing: 0.018em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: #ffffff;
+}
+.selecionado{
+    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.25), inset 0px 0px 0px 5px #32b72f;
+}
+.selecionado ion-icon{
+    display: initial;
+}
+ion-icon{
+    color: #32b72f;
+    display: none;
+}
+.botao-ativado{
+    background-color: #32b72f;
 }
