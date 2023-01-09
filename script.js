@@ -95,7 +95,7 @@ function fecharPedido(){
     let somaTotal = valorPrato+valorBebida+valorSobremesa;
     somaTotal = somaTotal.toFixed(2);
     somaTotal = somaTotal.replace('.',',');
-    const texto = `Olá, gostaria de fazer o pedido: \n- Prato: ${nomePrato}\n- Bebida: ${nomeBebida}\n- Sobremesa: ${nomeSobremesa}\nTotal: R$ ${somaTotal}`
+    const texto = `Olá, gostaria de fazer o pedido: \n- Prato: ${nomePrato}\n- Bebida: ${nomeBebida}\n- Sobremesa: ${nomeSobremesa}\nTotal: R$ ${somaTotal}`;
     const textoCompleto = encodeURIComponent(texto);
     window.open(`https://wa.me/+5592999999999?text=${textoCompleto}`);
 }
